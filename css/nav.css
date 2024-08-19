@@ -1,13 +1,15 @@
 nav {
+  background-color: #fff;
   padding: 5px 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  z-index: 999;
   position: fixed;
   width: 100%;
+  top: 0;
+  z-index: 999;
 }
 
 nav .logo {
@@ -56,7 +58,7 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-.hamburger .line {
+.hamburger .hamburger-line {
   width: 25px;
   height: 1px;
   background-color: #1f1f1f;
@@ -71,20 +73,20 @@ nav ul li a:hover {
   transform: rotate(45deg);
 }
 
-.hamburger-active .line:nth-child(2) {
+.hamburger-active .hamburger-line:nth-child(2) {
   width: 0px;
 }
 
-.hamburger-active .line:nth-child(1),
-.hamburger-active .line:nth-child(3) {
+.hamburger-active .hamburger-line:nth-child(1),
+.hamburger-active .hamburger-line:nth-child(3) {
   transition-delay: 0.3s;
 }
 
-.hamburger-active .line:nth-child(1) {
+.hamburger-active .hamburger-line:nth-child(1) {
   transform: translateY(12px);
 }
 
-.hamburger-active .line:nth-child(3) {
+.hamburger-active .hamburger-line:nth-child(3) {
   transform: translateY(-5px) rotate(90deg);
 }
 
