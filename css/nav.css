@@ -106,6 +106,10 @@ nav ul li a:hover {
   display: none;
 }
 
+.menubar.active {
+  display: flex;
+}
+
 .active {
   left: 0;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
