@@ -1,3 +1,5 @@
+// nav-bar
+
 const mobileNav = document.querySelector(".hamburger");
 const navbar = document.querySelector(".menubar");
 
