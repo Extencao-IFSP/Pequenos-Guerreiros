@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -15,10 +15,10 @@ body {
 
 .buttonp {
   font-size: 1.2rem;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1rem;
   text-align: center;
   text-decoration: none;
-  border: 2px #1790d9;
+  border: 0.125rem #1790d9;
   background-color: #1790d9;
   color: #ffffff;
   transition: 0.3s;
@@ -30,4 +30,129 @@ body {
   background-color: #1bdfb6;
   border: #1bdfb6;
   transition: 0.3s;
+}
+
+/* Somos nos */
+
+.somosNos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 3.125rem;
+  gap: 1.25rem;
+  /* Espaçamento entre a imagem e o texto */
+}
+
+.image-container {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.image-container img {
+  width: auto;
+  max-height: 20rem;
+  box-shadow: 0rem 0rem 0.625rem rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  max-width: 100%;
+}
+
+.content h1 {
+  font-size: 2.25rem;
+  color: #003060;
+  margin-bottom: 1.875rem;
+  position: relative;
+  line-height: 1.2;
+}
+
+.content p {
+  font-size: 1.125rem;
+  color: #333333;
+  margin-bottom: 2.5rem;
+  line-height: 1.5;
+}
+
+.content .author {
+  font-weight: bold;
+  color: #003060;
+  margin-bottom: 2.5rem;
+}
+
+.content .button-container {
+  text-align: center;
+}
+
+.content .button-container a {
+  display: inline-block;
+  padding: 0.9375rem 1.875rem;
+  background-color: #0069b4;
+  color: white;
+  text-decoration: none;
+  font-size: 1.125rem;
+  border-radius: 0.3125rem;
+}
+
+.content .button-container a:hover {
+  background-color: #004a8b;
+}
+
+@media (max-width: 860px) {
+  .somosNos {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .image-container {
+    margin-bottom: 1.25rem;
+  }
+}
+
+.statistics-section {
+  background-color: black;
+  background-position: center;
+  height: 50dvh;
+  width: 100%;
+  justify-content: space-around;
+  padding: 0 6rem;
+  line-height: 2rem;
+}
+
+.statistics-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.statistics-item {
+  text-align: center;
+}
+
+.count-value {
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.count-label {
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+@media (max-width: 860px) {
+  .statistics-row {
+    flex-direction: column;
+  }
+
+  .statistics-section {
+    height: auto;
+    padding: 2rem;
+  }
+
+  .statistics-item {
+    margin: 2rem 0;
+  }
 }
