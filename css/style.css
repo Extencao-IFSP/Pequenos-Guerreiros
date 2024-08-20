@@ -12,3 +12,22 @@ body {
   height: 110dvh;
   font-family: "Inter", sans-serif;
 }
+
+.buttonp {
+  font-size: 1.2rem;
+  padding: 1rem 1rem 1rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  border: 2px #1790d9;
+  background-color: #1790d9;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.buttonp:hover {
+  cursor: pointer;
+  scale: 0.9;
+  background-color: #1bdfb6;
+  border: #1bdfb6;
+  transition: 0.3s;
+}

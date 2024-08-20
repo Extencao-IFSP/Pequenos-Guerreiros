@@ -12,10 +12,6 @@
     "wdth" 100;
 }
 
-.font .menubar{
-  left: -100%;
-}
-
 header {
   position: relative;
   height: 75vh;
@@ -164,7 +160,7 @@ ul.spaced-list li {
   background-color: #1790d9;
   color: #ffffff;
   overflow: hidden;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: 0.3s;
 }
 
 .buttonp:hover {
@@ -172,6 +168,7 @@ ul.spaced-list li {
   scale: 0.90;
   background-color: #1bdfb6;
   border: #1bdfb6;
+  transition: 0.3s;
   /*box-shadow: 0 0 10px rgb(161, 161, 161);*/
 }
 
