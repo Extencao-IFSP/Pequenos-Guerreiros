@@ -12,6 +12,10 @@
     "wdth" 100;
 }
 
+.font .menubar{
+  left: -100%;
+}
+
 header {
   position: relative;
   height: 75vh;

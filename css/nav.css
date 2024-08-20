@@ -106,7 +106,7 @@ nav ul li a:hover {
   display: none;
 }
 
-.menubar.active {
+.menubar .active {
   display: flex;
 }
 
