@@ -1,0 +1,86 @@
+.carousel {
+    position: relative;
+    margin-top: 80px;
+    /* Espaço para a navbar */
+    width: 100%;
+    height: calc(90vh - 80px);
+    /* Altura total menos a altura da navbar */
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.carousel img.active {
+    opacity: 1;
+}
+
+/* Controles do carousel */
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.carousel-control-prev {
+    margin-left: 2rem;
+}
+
+.carousel-control-next {
+    margin-right: 2rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.images{
+    opacity: 85%;
+}
+
+/* Estilo do texto sobreposto */
+.text {
+    position: absolute;
+    z-index: 3;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 790px) {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        margin-left: 0;
+        margin-right: 0;
+        transition: 0.6s;
+    }
+
+}
