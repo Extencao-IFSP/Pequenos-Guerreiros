@@ -163,6 +163,7 @@ body {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-100%);
   }
@@ -210,11 +211,12 @@ body {
   margin: 0 50px;
 }
 
-.parceiros{
-  padding: 20px;;
+.parceiros {
+  padding: 20px;
+  ;
 }
 
-.parceiros h2{
+.parceiros h2 {
   padding-left: 50px;
 }
 
@@ -223,10 +225,11 @@ body {
 
 @keyframes slide {
   from {
-    transform: translateX(0);
+    transform: translateX(100%);
   }
+
   to {
-    transform: translateX(-100%);
+    transform: translateX(-150%);
   }
 }
 
@@ -234,15 +237,17 @@ body {
   overflow: hidden;
   padding: 20px 0;
   background: white;
-  white-space: nowrap;
   position: relative;
+  width: 100%;
+  /* Ajusta o tamanho da div ao tamanho do contêiner pai */
 }
 
 .depo:before,
 .depo:after {
   position: absolute;
   top: 0;
-  width: 700px;
+  width: 50px;
+  /* Ajuste conforme necessário */
   height: 100%;
   content: "";
   z-index: 2;
@@ -258,40 +263,48 @@ body {
   background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
 }
 
-.depo:hover .depo-slide {
+.depo-slide {
+  display: flex;
+  animation: 10s slide infinite linear;
+  position: relative;
+  /* Alinha os itens no centro */
+  flex-wrap: nowrap;
+  gap: 50dvh;
+}
+
+.divisorias {
+  flex: 0 0 auto;
+  width: 80%;
+  max-width: 300px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 0 10px;
+  background: #f9f9f9;
+}
+
+.depo-slide:hover{
   animation-play-state: paused;
 }
 
-.depo-slide {
-  display: inline-block;
-  animation: 30s slide infinite linear;
-  display: inline-block;
-  position: relative;
-}
-
-.depo-slide p:nth-child(1){
-  height: 100px;
-  width: 200px;;
-  margin: 0 50px;
-}
-
-footer{
+footer {
   background-color: #727171;
   color: #ffffff;
   padding: 10px 50px 10px 50px;
   align-content: center;
 }
 
-footer div:nth-child(1){
+footer div:nth-child(1) {
   position: relative;
   height: 150px;
-  width: 45%;  
+  width: 45%;
   display: inline-block;
   align-content: center;
 
 }
 
-footer div:nth-child(2){
+footer div:nth-child(2) {
   position: relative;
   width: 45%;
   display: flex;
@@ -300,10 +313,10 @@ footer div:nth-child(2){
   justify-content: center;
 }
 
-footer iframe{
+footer iframe {
   width: 100%;
 }
 
-footer ul{
+footer ul {
   list-style: none;
 }
