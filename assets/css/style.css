@@ -40,9 +40,9 @@ font-family: 'Rufina', serif;
 	box-sizing:border-box;
 }
 body{
-	font-family: 'Poppins', sans-serif;
-	font-size:16px;
-	color:#818998;
+	font-family: 'Inter', sans-serif !important;
+	font-size:16px !important;
+	color:#818998 !important;
     text-transform:initial;
     max-width:1920px;
     margin:0 auto;
@@ -128,14 +128,14 @@ html,body{height: 100%;}
 
 /*-------------------------------------
         2. Top-area
---------------------------------------*/
+--------------------------------------
 nav.navbar.bootsnav {
     background-color: transparent;
     border-bottom: transparent;
 }
 .wrap-sticky nav.navbar.bootsnav.sticked {background-color: #000;box-shadow: 0 2px 5px rgba(0,0,0,.2);}
 
-/*.navbar-brand*/
+
 .navbar-header a.navbar-brand,.navbar-header a.navbar-brand:hover,.navbar-header a.navbar-brand:focus{
     display: inline-block;
     color: #fff;
@@ -149,9 +149,7 @@ nav.navbar.bootsnav {
 .navbar-header a.navbar-brand span{display: inline-block;color:#4e4ffa;text-transform:capitalize;}
 
 .wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand,.wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand:hover,.wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand:focus {padding:30px 0px;}
-/*.navbar-brand*/
 
-/*.nav li*/
 nav.navbar.bootsnav ul.nav > li > a {
     color: #f5f7fa;
     font-size: 16px;
@@ -175,7 +173,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
     margin-left: 15px;
 }
 .wrap-sticky nav.navbar.bootsnav.sticked ul.nav > li > a{padding:30px 25px;}
-/*.nav li*/
+.nav li*/
 
 /*.menu-ui-design*/
 .menu-ui-design{overflow-y:scroll;height: 350px;}
@@ -190,7 +188,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
 }
 /*.menu-ui-design*/
 
-/*.navbar-toggle */
+/*.navbar-toggle 
 nav.navbar.bootsnav .navbar-toggle {
     position: relative;
     background-color: transparent;
@@ -199,7 +197,7 @@ nav.navbar.bootsnav .navbar-toggle {
     top: 0;
 }
 nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
-/*.navbar-toggle */
+.navbar-toggle */
 
 /*-------------------------------------
         3.  Welcome-hero
@@ -310,7 +308,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
     line-height: 60px;
     width: 50px;
     text-align: center;
-    font-family: "Flaticon";
+    font-family: 'Inter', sans-serif !important;
     pointer-events: none;
     border: transparent;
 }/*model-select-icon*/
