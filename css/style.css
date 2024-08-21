@@ -274,36 +274,3 @@ body {
   width: 200px;;
   margin: 0 50px;
 }
-
-footer{
-  background-color: #727171;
-  color: #ffffff;
-  padding: 10px 50px 10px 50px;
-  align-content: center;
-}
-
-footer div:nth-child(1){
-  position: relative;
-  height: 150px;
-  width: 45%;  
-  display: inline-block;
-  align-content: center;
-
-}
-
-footer div:nth-child(2){
-  position: relative;
-  width: 45%;
-  display: flex;
-  float: right;
-  align-content: center;
-  justify-content: center;
-}
-
-footer iframe{
-  width: 100%;
-}
-
-footer ul{
-  list-style: none;
-}
