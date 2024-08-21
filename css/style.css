@@ -21,6 +21,7 @@ body {
   background-color: #1790d9;
   color: #ffffff;
   transition: 0.3s;
+  border-radius: 10px;
 }
 
 .buttonp:hover {
@@ -154,4 +155,155 @@ body {
   .statistics-item {
     margin: 2rem 0;
   }
+}
+
+
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 20px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 700px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 30s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 100px;
+  margin: 0 50px;
+}
+
+.parceiros{
+  padding: 20px;;
+}
+
+.parceiros h2{
+  padding-left: 50px;
+}
+
+
+
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.depo {
+  overflow: hidden;
+  padding: 20px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.depo:before,
+.depo:after {
+  position: absolute;
+  top: 0;
+  width: 700px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.depo:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.depo:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.depo:hover .depo-slide {
+  animation-play-state: paused;
+}
+
+.depo-slide {
+  display: inline-block;
+  animation: 30s slide infinite linear;
+  display: inline-block;
+  position: relative;
+}
+
+.depo-slide p:nth-child(1){
+  height: 100px;
+  width: 200px;;
+  margin: 0 50px;
+}
+
+footer{
+  background-color: #727171;
+  color: #ffffff;
+  padding: 10px 50px 10px 50px;
+  align-content: center;
+}
+
+footer div:nth-child(1){
+  position: relative;
+  height: 150px;
+  width: 45%;  
+  display: inline-block;
+  align-content: center;
+
+}
+
+footer div:nth-child(2){
+  position: relative;
+  width: 45%;
+  display: flex;
+  float: right;
+  align-content: center;
+  justify-content: center;
+}
+
+footer iframe{
+  width: 100%;
+}
+
+footer ul{
+  list-style: none;
 }
