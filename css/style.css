@@ -233,6 +233,13 @@ body {
   }
 }
 
+.coments{
+  padding: 50px;
+}
+
+.coments h2{
+  padding: 50px 0px 20px 0px ;
+}
 .depo {
   overflow: hidden;
   padding: 20px 0;
@@ -253,47 +260,48 @@ body {
   z-index: 2;
 }
 
-.depo:before {
-  left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
-}
 
-.depo:after {
-  right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
-}
-
-.depo-slide {
-  display: flex;
-  animation: 10s slide infinite linear;
-  position: relative;
-  /* Alinha os itens no centro */
-  flex-wrap: nowrap;
-  gap: 50dvh;
-}
 
 .divisorias {
+  border-style: none;
+  border-radius: 10px;
+  font-family: "Inter", sans-serif;
   flex: 0 0 auto;
   width: 80%;
   max-width: 300px;
   box-sizing: border-box;
   text-align: center;
-  padding: 10px;
-  border: 1px solid #ccc;
+  padding: 20px;
+  border: 1px solid #e6e4e4;
   margin: 0 10px;
-  background: #f9f9f9;
+  background: #d8d6d6;
+  justify-content: center;
 }
 
-.depo-slide:hover{
-  animation-play-state: paused;
+.divisorias p{
+  color: #000000;
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
+.divisorias h3{
+  padding: 10px 0 0 0 ;
+  color: #000000;
+  font-weight: bold;
+}
+.divisorias h4{
+  padding: 10px;
+  color: #238d43;
+}
 
 .depo-slide {
-  display: inline-block;
-  animation: 30s slide infinite linear;
-  display: inline-block;
+  display: flex;
   position: relative;
+  /* Alinha os itens no centro */
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0;
+  border-style: none;
 }
 
 .depo-slide p:nth-child(1){
