@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .font {
@@ -63,9 +65,12 @@ header .overlay {
 }
 
 .margin {
-  margin-left: 150px;
-  margin-right: 150px;
+  margin: 0 5% 0 5%;
   text-align: justify;
+}
+
+.margin p {
+  margin-top: 1rem;
 }
 
 #adriana {
@@ -84,6 +89,14 @@ header .overlay {
   width: 100%;
   padding: 5px;
   text-align: center;
+}
+
+.img-container img {
+  width: 50%;
+}
+
+.img-container h2 {
+  font-size: 1rem;
 }
 
 #center-acoes {
@@ -114,26 +127,76 @@ h1 {
   text-align: center;
 }
 
-.quokka {
-  display: flex;
-  align-items: flex-start;
-  position: relative;
-  top: -90px;
-  max-width: 700px;
-  max-height: 700px;
-
-}
-
+/* Estilo para a div principal que contém a imagem e o texto */
 .text-quokka {
-  display: flex;
-  flex-direction: row;
-  padding-right: 250px;
-  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  /* Define duas colunas */
+  gap: 20px;
+  /* Espaçamento entre colunas */
+  margin: -4rem 1% 0 1%;
+  align-items: center;
+  justify-content: center;
 }
 
-@media(max-width: 780px) {
+/* Estilo da imagem */
+.text-quokka img {
+  width: 100%;
+  min-width: 321px;
+  max-width: 400px;
+  /* Limita o tamanho máximo da imagem */
+  height: auto;
+}
+
+/* Estilo para a coluna de texto */
+.text-quokka div {
+  padding-right: 20px;
+}
+
+/* Estilo para os itens da lista com espaçamento */
+.spaced-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.spaced-list li {
+  margin-bottom: 10px;
+}
+
+/* Estilo do botão */
+.button-quokka {
+  text-decoration: none;
+}
+
+.buttonp {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 780px) {
   .text-quokka {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    /* Coloca a imagem e o texto em uma única coluna */
+    text-align: center;
+  }
+
+  .text-quokka div {
+    padding-right: 0;
+  }
+
+  .text-quokka img {
+    width: 100%;
+    height: 100%;
+    /* Ajusta a largura da imagem */
+  }
+
+  .quokka {
+    width: 100%;
   }
 }
 
@@ -174,7 +237,8 @@ ul.spaced-list li {
 
 .cards {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0 2% 0 2%;
   text-align: center;
 }
 
@@ -220,4 +284,12 @@ ul.spaced-list li {
   scale: 0.90;
   background-color: #1bdfb6;
   border: #1bdfb6;
+}
+
+@media (max-width: 1099px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 }
