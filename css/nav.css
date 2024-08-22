@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: inter !important;
+}
+
 .nav {
   color: #000000 !important;
   height: 100px !important;
@@ -42,6 +49,7 @@
   list-style: none !important;
   font-family: 'Inter', sans-serif !important;
   display: flex !important;
+  margin: 0;
 }
 
 .nav ul li {
@@ -165,6 +173,7 @@
 
   nav ul {
     display: none;
+    margin: 0;
     scale: 0;
   }
 }
