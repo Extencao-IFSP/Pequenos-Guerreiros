@@ -98,6 +98,15 @@ body {
   background-color: #004a8b;
 }
 
+
+.parceiros h2, .coments h2{
+  font-size: 2.25rem;
+  color: #003060;
+  margin-bottom: 1.875rem;
+  position: relative;
+  line-height: 1.2;
+}
+
 @media (max-width: 860px) {
   .somosNos {
     grid-template-columns: 1fr;
@@ -233,13 +242,14 @@ body {
   }
 }
 
-.coments{
+.coments {
   padding: 50px;
 }
 
-.coments h2{
-  padding: 50px 0px 20px 0px ;
+.coments h2 {
+  padding: 50px 0px 20px 0px;
 }
+
 .depo {
   overflow: hidden;
   padding: 20px 0;
@@ -278,17 +288,19 @@ body {
   justify-content: center;
 }
 
-.divisorias p{
+.divisorias p {
   color: #000000;
   font-style: italic;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.divisorias h3{
-  padding: 10px 0 0 0 ;
+
+.divisorias h3 {
+  padding: 10px 0 0 0;
   color: #000000;
   font-weight: bold;
 }
-.divisorias h4{
+
+.divisorias h4 {
   padding: 10px;
   color: #238d43;
 }
@@ -304,9 +316,10 @@ body {
   border-style: none;
 }
 
-.depo-slide p:nth-child(1){
+.depo-slide p:nth-child(1) {
   height: 100px;
-  width: 200px;;
+  width: 200px;
+  ;
   margin: 0 50px;
 }
 
